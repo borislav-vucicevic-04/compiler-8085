@@ -1,0 +1,11 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer circle -->
+  <circle cx="100" cy="100" r="80" fill="#131313" stroke="#cebade" stroke-width="3" />
+
+  <!-- Text styling and placement -->
+  <text x="40" y="105" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#fefefe" dominant-baseline="middle">C</text>
+  <text x="80" y="105" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#4678b9" dominant-baseline="middle">8</text>
+  <text x="100" y="105" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#cebade" dominant-baseline="middle">0</text>
+  <text x="120" y="105" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ff5733" dominant-baseline="middle">8</text>
+  <text x="140" y="105" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#50723C" dominant-baseline="middle">5</text>
+</svg>
