@@ -1,0 +1,181 @@
+.App {
+  overflow: auto;
+  position: fixed;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50px auto;
+  height: 100dvh;
+  width: 100dvw;
+  box-sizing: border-box;
+  gap: 1rem;
+  padding: 1rem;
+  color: #131313;
+}
+
+.preloader {
+  position: fixed;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 3rem;
+  color: #131313;
+  letter-spacing: 8px;
+  font-weight: bold;
+  animation: preloader-fade-out 0.75s ease-in-out 1.5s;
+}
+.preloader img {
+  position: relative;
+  animation: logo-fade-in 0.75s ease-in-out;
+}
+.preloader span {
+  position: relative;
+  animation: txt-fade-in 0.75s ease-in-out;
+}
+@keyframes preloader-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes logo-fade-in {
+  from {
+    opacity: 0;
+    top: -200px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes txt-fade-in {
+  from {
+    opacity: 0;
+    top: 200px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.App button {
+  margin: 0;
+  padding: 0;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.help-button {
+  color: #fefefe;
+  background-color: #1c304a;
+  border: 2px solid #1c304a;
+  transition: all 0.3s;
+}
+.help-button:hover {
+  background-color: #2a486f;
+}
+.compile-button {
+  color: #fefefe;
+  background-color: #50723C;
+  border: 2px solid #50723C;
+  transition: all 0.3s;
+}
+.compile-button:hover {
+  background-color: hsl(98, 31%, 40%);
+}
+.workspace {
+  border: solid 2px #131313;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  resize: vertical;
+}
+.error {
+  width: 100%;
+  text-align: left;
+  white-space: pre;
+  color: hsl(3, 70%, 50%);
+  font-weight: bold;
+  font-size: 1rem;
+}
+.memory-table {
+  height: fit-content;
+  width: 100%;
+  border: #131313 solid 1px;
+  border-spacing: 0;
+}
+.memory-table th, .memory-table td {
+  height: fit-content;
+  padding: 0.5rem;
+  border: solid #131313 1px;
+  background-color: #cebade;
+}
+.memory-table tr:nth-child(2n-1) td {
+  background-color: hsl(273, 35%, 90%);
+}
+.dialog-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.dialog-body {
+  max-height: 90%;
+  width: 60%;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  border: solid 2px #131313;
+  box-sizing: border-box;
+  background-color: white;
+  position: relative;
+  z-index: 5;
+  text-align: left;
+  font-size: 1.25rem;
+  overflow: auto;
+}
+.dialog-body h1 {
+  margin: 0;
+  text-align: left;
+}
+.dialog-body hr {
+  height: 1px;
+  margin: 1.5rem 0;
+  background-color: #131313;
+}
+.dialog-body code {
+  display: block;
+  white-space: pre-wrap 
+}
+.dialog-body button {
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: #fefefe;
+  background-color: #1c304a;
+  border: 2px solid #1c304a;
+  transition: all 0.3s;
+}
+.dialog-body button:hover {
+  background-color: #2a486f;
+}

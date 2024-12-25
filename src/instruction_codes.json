@@ -1,0 +1,18 @@
+{
+  "MVI A": "3E",
+  "MVI B": "06",
+  "MVI C": "0E",
+  "MOV A,B": "78",
+  "MOV A,C": "79",
+  "MOV B,A": "47",
+  "MOV B,C": "41",
+  "MOV C,A": "4F",
+  "MOV C,B": "48",
+  "ADD A": "87",
+  "ADD B": "80",
+  "ADD C": "81",
+  "SUB A": "97",
+  "SUB B": "90",
+  "SUB C": "91",
+  "HLT": "76"
+}
