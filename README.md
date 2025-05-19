@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# 8085 Assembly Compiler
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple web-based compiler for the **Intel 8085 microprocessor** that translates a limited set of **assembly instructions into binary code**. The project was developed as part of a university course on **low-level programming languages**.
 
-## Available Scripts
+🔗 **Live Application**: [8085 Compiler](https://borislav-vucicevic-04.github.io/compiler-8085/)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🧠 Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The application allows users to enter supported 8085 assembly instructions, which are then **compiled into binary**. It features a clean and minimal interface, along with a **help dialog** that guides users through its usage.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## ✅ Supported Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The compiler currently supports a subset of 8085 instructions, including:
+- `mvi a,05`
+- `mvi b,05`
+- `mvi c,05`
+- `mov a,b`
+- `mov a,c`
+- `mov b,a`
+- `mov b,c`
+- `mov c,a`
+- `mov c,b`
+- `add a`
+- `add b`
+- `add c`
+- `sub a`
+- `sub b`
+- `sub c`
+- `hlt`
 
-### `npm run build`
+Instructions must be entered in lowercase as shown.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📦 Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 🧾 **Assembly to Binary Conversion**  
+  Instantly converts supported 8085 assembly instructions into binary code.
 
-### `npm run eject`
+- 🆘 **Help Dialog**  
+  Provides an in-app guide on how to use the compiler and input instructions.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- ⚙️ **Simple UI**  
+  Minimalistic design with focus on functionality and clarity.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🛠️ Technologies Used
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **TypeScript**
+- **React**
+- **Hosted on GitHub Pages**
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📚 Educational Purpose
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This compiler was built for academic purposes, specifically for a course focused on:
+- Low-level programming
+- Assembly language
+- Program translators (compilers and assemblers)
+- 8085 microprocessor architecture
+
